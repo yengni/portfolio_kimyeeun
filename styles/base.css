@@ -1,0 +1,32 @@
+/* reset */
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'YESMyoungjo-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESMyoungjo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{box-sizing: border-box;}
+html,body,
+h1,h2,h3,h4,h5,h6,p,
+ul,ol,li,dl,dt,dd,blockquote,q,video,img,
+table,tr,td,th,thead,tfoot,tbody,
+form,fieldset,legend,input,textarea,button,select,option,label,
+div,section,article,header,nav,main,aside,footer,address,
+figure,figcaption,sup,sub,em,strong,span,i,del,s,a,code,mark{
+    margin: 0; padding: 0; line-height: 1.0;
+    font-size: 18px; font-weight: 400; font-style: normal;
+    color: #333;
+    list-style: none;
+    font-family: 'GmarketSansMedium', 'YESMyoungjo-Regular'; /* 공백이 있을 땐 큰따옴표로 가져옴 */
+    letter-spacing: -0.02rem;
+}
+a{text-decoration: none;}
+table,tr,td,th{border-collapse: collapse;}
+button{cursor: pointer;} /* 초기화 끝 */

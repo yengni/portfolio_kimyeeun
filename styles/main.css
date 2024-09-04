@@ -1,0 +1,241 @@
+body {background-color: #FFFEFA;}
+header {
+    background-image: url(../img/mainvisual2.png);
+    width: 1920px; height: 1080px;
+    position: relative;
+}
+header .title {
+    background: url(../img/paint.png) no-repeat center center;
+    width: 1092px; height: 609px;
+    position: absolute;
+    top: 50%; left: 50%; transform: translate(-50%, -50%);
+}
+header .title h2 {
+    font-size: 2.778rem;
+    color: #004E11;
+    text-align: center;
+    margin-top: 159px;
+}
+header .title h1 {
+    font-size: 7.222rem;
+    color: #004E11;
+    text-align: center;
+    margin-top: 60px; margin-bottom: 60px;
+    font-weight: bold;
+}
+header .title ul {
+    display: flex;
+    justify-content: center;
+}
+header .title ul li {
+    margin-right: 40px;
+}
+header .title ul li a {
+    font-size: 1.222em;
+}
+header .title ul li:last-child {
+    margin-right: 0;
+}
+header .title ul li a:hover {
+    color: #12992f;
+}
+/* header 끝 */
+.cont1 {
+    padding: 128px 120px 0;
+    margin: auto 0;
+    height: 1080px;
+    border-bottom: 2px solid #004E11;
+} 
+.cont1 h3 {
+    font-family: "YESMyoungjo-Regular";
+    font-size: 2.22rem;
+} 
+.cont1 h3 span {
+    font-size: 2.77rem;
+    font-family: "YESMyoungjo-Regular";
+}
+.cont1 .cont1in {
+    margin-top: 50px;
+    display: flex;
+}
+.cont1 .profile {width: 470px;}
+.cont1 .profile>img {
+    margin-bottom: 52px;
+}
+.cont1 .profile .p_name {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.cont1 .profile .p_name .name {
+    font-size: 1.667rem;
+    color: #000;
+    margin-right: 28px;
+}
+.cont1 .profile .p_name .e_name {
+    font-weight: 300;
+    font-family: "Gothic A1", sans-serif;
+    letter-spacing: 0.05rem;
+    padding-top: 5px;
+}
+.cont1 .profile .p_txt>p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cont1 .cont1in .about_list {margin-left: 130px;}
+.cont1 .cont1in .about_list h4 {
+    font-size: 1.222rem;
+    color: #000;
+    border-bottom: 3px solid #004E11;
+    display: inline-block;
+    margin-bottom: 28px;
+}
+.cont1 .cont1in .about_list .Keyword p {
+    font-size: 1.222rem;
+    line-height: 40px;
+    margin-bottom: 90px;
+}
+.cont1 .cont1in .about_list .Interest p {
+    margin-bottom: 25px;
+}
+.cont1 .cont1in .about_list .Certificate p {margin-bottom: 15px;}
+.cont1 .cont1in .about_list .Certificate p:last-child {margin-bottom: 90px;}
+.cont1 .cont1in .about_list .Certificate span {
+    color: #555; margin-left: 15px;
+}
+.cont1 .cont1in .about_list .Experience p {margin-bottom: 15px;}
+.cont1 .cont1in .about_list .Experience p:last-child {margin-bottom: 90px;}
+.cont1 .cont1in .about_list .Experience span {
+    color: #555; margin-left: 15px;
+}
+.cont1 .cont1in .about_list .Skills ul {display: flex;}
+.cont1 .cont1in .about_list .Skills ul li {margin-right: 15px;}
+.cont1 .cont1in .about_list .Skills ul li:last-child {margin-right: 0px;}
+/* cont1 끝 */
+.cont2 {
+    padding: 134px 120px 0;
+    margin: auto 0;
+    height: 1080px;
+    border-bottom: 2px solid #004E11;
+}
+.cont2 h3 {
+    font-family: "YESMyoungjo-Regular";
+    font-size: 2.22rem;
+}
+.cont2 h3 span {
+    font-size: 2.77rem;
+    font-family: "YESMyoungjo-Regular";
+}
+.cont2 .web_list {
+    display: flex;
+    justify-content: center;
+}
+.cont2 .web_list li {margin-right: 90px;}
+.cont2 .web_list li:last-child {margin-right: 0px;}
+.cont2 .web_list li .title {
+    margin: 88px 0 32px 4px;
+    display: flex;
+}
+.cont2 .web_list li .title h4 {
+    font-size: 1.222rem;
+    color: #000;
+    border-bottom: 3px solid #004E11;
+}
+.cont2 .web_list li .title>p {
+    margin-top: 5px; margin-left: 10px;
+    font-size: 0.778rem;
+    color: #555;
+    letter-spacing: -0.01rem;
+}
+.cont2 .web_list li .btn {}
+.cont2 .web_list li .btn a {
+    font-size: 0.889rem;
+    background: #9BC2D8;
+    width: 110px; height: 28px;
+    display: inline-block;
+    text-align: center;
+    line-height: 28px;
+    margin-left: 8px;
+}
+.cont2 .web_list li .btn a:first-child {
+    margin-left: 27px;
+}
+.cont2 .web_list li img {}
+.cont2 .web_list li .w_txt {
+    width: 450px; height: 148px;
+    background: linear-gradient(to left, #EBEBEF 0%, #F9F9F9 50%, #EBEBEF 100%);
+    border-radius: 20px;
+    position: relative;
+    padding-top: 26px;
+    margin: 25px auto 0;
+}
+.cont2 .web_list li .w_txt>p {
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+.cont2 .web_list li .w_txt>p span {
+    font-weight: bold;
+}
+.cont2 .web_list li .w_txt .icon {
+    margin-right: 10px;
+    position: absolute;
+    right: 25px; bottom: 10px;
+}
+/* cont2 끝 */
+.cont3 {
+    padding: 80px 120px 0;
+    margin: auto 0;
+    height: 1080px;
+    border-bottom: 2px solid #004E11;
+}
+.cont3 h3 {
+    font-family: "YESMyoungjo-Regular";
+    font-size: 2.22rem;
+}
+.cont3 h3 span {
+    font-size: 2.77rem;
+    font-family: "YESMyoungjo-Regular";
+}
+.cont3 ul {
+    margin-top: 56px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cont3 ul li img {
+    width: 405px; height: 405px;
+    background-color: lightblue;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+/* cont3 끝 */
+.cont4 {
+    padding: 90px 120px 0;
+    margin: auto 0;
+    height: 1080px;
+    border-bottom: 2px solid #004E11;
+}
+.cont4 h3 {
+    font-family: "YESMyoungjo-Regular";
+    font-size: 2.22rem;
+}
+.cont4 h3 span {
+    font-size: 2.77rem;
+    font-family: "YESMyoungjo-Regular";
+}
+/* cont4 끝 */
+.cont5 {
+    padding: 90px 120px 0;
+    margin: auto 0;
+    height: 1080px;
+    border-bottom: 2px solid #004E11;
+}
+.cont5 h3 {
+    font-family: "YESMyoungjo-Regular";
+    font-size: 2.22rem;
+}
+.cont5 h3 span {
+    font-size: 2.77rem;
+    font-family: "YESMyoungjo-Regular";
+}
+/* cont5 끝 */
