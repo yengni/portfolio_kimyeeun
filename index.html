@@ -6,6 +6,7 @@
     <title>portfolio</title>
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -14,107 +15,117 @@
 <body>
     <header>
         <div class="title">
-            <h2>2024 Web Publisher</h2>
-            <h1>PORT-FOLIO</h1>
-            <ul>
-                <li><a href="#">Web Redesign Project</a></li>
-                <li><a href="#">SNS Design</a></li>
-                <li><a href="#">Banner Design</a></li>
-                </ul>
+            <div class="bg"><img src="img/paint.png" alt="백그라운드 이미지"></div>
+            <div class="title_cont">
+                <span>
+                    <img src="img/profile_s.png" alt="프로필사진 작은사이즈">
+                    <p>YeEun's</p>
+                </span>
+                <h2>2024 Web Publisher</h2>
+                <h1>PORT-FOLIO</h1>
+                <ul class="pf_list">
+                    <li><a href="#aboutme">About ME</a></li>
+                    <li><a href="#Web Redesign Project">Web Redesign Project</a></li>
+                    <li><a href="#SNS Design">SNS Design</a></li>
+                    <li><a href="#Banner Design">Banner Design</a></li>
+                    <li><a href="#Detail Design">Detail Design</a></li>
+                    </ul>
+            </div>
         </div>
     </header><!-- header 끝 -->
-    <section class="container">
-        <section class="cont1">
-            <h3>About <span>ME</span></h3>
-            <div class="cont1in">
-                <div class="profile">
-                    <img src="img/profile.png" alt="프로필사진">
-                    <div class="p_txt">
-                        <div class="p_name">
-                            <p class="name">김예은</p>
-                            <p class="e_name">KIM YE EUN</p>
-                        </div>
-                        <p>1996.10.09</p>
-                        <p>010-4955-4670</p>
-                        <p>yeeeeeun1013@naver.com</p>
+    <section class="container cont1" id="aboutme">
+        <div class="sub_title"><h3>About <span>ME</span></h3></div>
+        <div class="contin">
+            <div class="profile about_cont">
+                <img src="img/profile.png" alt="프로필사진">
+                <div class="p_txt">
+                    <div class="p_name">
+                        <p class="name">김예은</p>
+                        <p class="e_name">KIM YE EUN</p>
                     </div>
-                </div>
-                <div class="about_list">
-                    <div class="Keyword">
-                        <h4>Keyword</h4>
-                        <p>#도전정신 #발랄함 #창의력 <br> #꼼꼼함 #취미부자 <br>
-                        #안되는건될때까지 #재미집착</p>
-                    </div>
-                    <div class="Interest">
-                        <h4>Interest</h4>
-                        <p>• 매장 인테리어 꼼꼼히 보기</p>
-                        <p>• 지인들에게 선물하고 반응 즐기기</p>
-                        <p>• 뜨개질하다 손목 나가기</p>
-                        <p>• 필라테스하며 괴로워하기</p>
-                        <p>• 로직으로 밤새 불태우기</p>
-                        <p>• 일기쓰며 마음 다스리기</p>
-                        <p>• 2만보 걷고 안 힘들어 하기</p>
-                        <p>• 블로그 체험단으로 식비 아끼기</p>
-                        <p>• 심금을 울리는 노래가 생기면 한곡 반복듣기</p>
-                    </div>
-                </div>
-                <div class="about_list">
-                    <div class="Certificate">
-                        <h4>Certificate</h4>
-                        <p>2024.05 <span>GTQ, GTQi 1급</span></p>
-                        <p>2023.04 <span>사회복지사 1급</span></p>
-                        <p>2020.02 <span>컴퓨터활용능력 2급</span></p>
-                        <p>2018.06 <span>자동차운전면허 1종</span></p>
-                        <p>2018.02 <span>보육교사 2급</span></p>
-                    </div>
-                    <div class="Experience">
-                        <h4>Experience</h4>
-                        <p>2024.05 - 2024.10 <span>UI/UX 반응형 웹디자인&웹퍼블리셔 양성과정 수료</span></p>
-                        <p>2024.03 - 2024.04 <span>그래픽디자인(포토샵, 일러스트) GTQ자격증반 수료</span></p>
-                        <p>2020.04 - 2023.10 <span>계양구가족센터 사회복지사 근무</span></p>
-                        <p>2019.08 - 2019.11 <span>인천광역시아동복지협회 사회복지사 근무</span></p>
-                        <p>2018.10 - 2019.03 <span>아이사랑지역아동센터 사회복지사 근무</span></p>
-                    </div>
-                    <div class="Skills">
-                        <h4>Skills</h4>
-                        <ul>
-                            <li><img src="img/icon_green (1).png" alt="html"></li>
-                            <li><img src="img/icon_green (2).png" alt="css"></li>
-                            <li><img src="img/icon_green (3).png" alt="js"></li>
-                            <li><img src="img/icon_green (4).png" alt="ai"></li>
-                            <li><img src="img/icon_green (5).png" alt="ps"></li>
-                            <li><img src="img/icon_green (6).png" alt="git"></li>
-                            <li><img src="img/icon_green (7).png" alt="fig"></li>
-                        </ul>
-                    </div>
+                    <p>1996.10.09</p>
+                    <p>010-4955-4670</p>
+                    <p>yeeeeeun1013@naver.com</p>
                 </div>
             </div>
-        </section><!-- cont1 끝 -->
-        <section class="cont2">
-            <h3><span>01</span> Web Redesign Project</h3>
+            <div class="about1 about_cont">
+                <div class="Keyword about_list">
+                    <h4>Keyword</h4>
+                    <p>#도전정신 #발랄함 #창의력 <br> #꼼꼼함 #취미부자 <br>
+                    #안되는건될때까지 #재미집착</p>
+                </div>
+                <div class="Interest about_list">
+                    <h4>Interest</h4>
+                    <p>• 매장 인테리어 꼼꼼히 보기</p>
+                    <p>• 지인들에게 선물하고 반응 즐기기</p>
+                    <p>• 뜨개질하다 손목 나가기</p>
+                    <p>• 필라테스하며 괴로워하기</p>
+                    <p>• 로직으로 밤새 불태우기</p>
+                    <p>• 일기쓰며 마음 다스리기</p>
+                    <p>• 2만보 걷고 안 힘들어 하기</p>
+                    <p>• 블로그 체험단으로 식비 아끼기</p>
+                    <p>• 심금을 울리는 노래가 생기면 한곡 반복듣기</p>
+                </div>
+            </div>
+            <div class="about2 about_cont">
+                <div class="Certificate about_list">
+                    <h4>Certificate</h4>
+                    <p>2024.05 <span>GTQ, GTQi 1급</span></p>
+                    <p>2023.04 <span>사회복지사 1급</span></p>
+                    <p>2020.02 <span>컴퓨터활용능력 2급</span></p>
+                    <p>2018.06 <span>자동차운전면허 1종</span></p>
+                    <p>2018.02 <span>보육교사 2급</span></p>
+                </div>
+                <div class="Experience about_list">
+                    <h4>Experience</h4>
+                    <p>2024.05 - 2024.10 <span>UI/UX 반응형 웹디자인&웹퍼블리셔 양성과정 수료</span></p>
+                    <p>2024.03 - 2024.04 <span>그래픽디자인(포토샵, 일러스트) GTQ자격증반 수료</span></p>
+                    <p>2020.04 - 2023.10 <span>계양구가족센터 사회복지사 근무</span></p>
+                    <p>2019.08 - 2019.11 <span>인천광역시아동복지협회 사회복지사 근무</span></p>
+                    <p>2018.10 - 2019.03 <span>아이사랑지역아동센터 사회복지사 근무</span></p>
+                </div>
+                <div class="Skills about_list">
+                    <h4>Skills</h4>
+                    <ul class="skills_list">
+                        <li><img src="img/icon_green_html.png" alt="html"></li>
+                        <li><img src="img/icon_green_css.png" alt="css"></li>
+                        <li><img src="img/icon_green_js.png" alt="js"></li>
+                        <li><img src="img/icon_green_ai.png" alt="ai"></li>
+                        <li><img src="img/icon_green_ps.png" alt="ps"></li>
+                        <li><img src="img/icon_green_git.png" alt="git"></li>
+                        <li><img src="img/icon_green_fig.png" alt="fig"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section><!-- cont1 끝 -->
+    <section class="container cont2" id="Web Redesign Project">
+        <div class="sub_title"><h3><span>01</span> Web Redesign Project</h3></div>
+        <div class="contin">
             <ul class="web_list">
                 <li>
                     <div class="title">
                         <h4>그랑핸드</h4>
                         <p>#내가좋아하는  #유니크한향들</p>
                     </div>
-                    <div class="btn">
-                        <a href="#">기획서</a>
-                        <a href="#">Wireframe</a>
-                        <a href="#">Prototype</a>
+                    <div class="thumnail">
+                        <div class="btn">
+                            <a href="https://www.figma.com/proto/b9dIieWOlnFayYaJh865vn%EC%9B%B9-%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4-%EA%B8%0%ED%9A%8D%EC%84%9C_%EA%B9%80%EC%98%88%EC%9D%80?page-id=0%3A1node-id=1-44&node-type=frame&viewport=3476%2C371%2C0.49t=s9yPLQ8PZeW2Tgau-1&scaling=containcontent-scaling=fixed">기획서</a>
+                            <a href="https://www.figma.com/proto/ItJMfOzQNAZjPqwZD22iK2%EA%B7%B8%EB%9E%91%ED%95%B8%EB%93%9C?page-id=0%3A1node-id=414-307&node-type=frame&viewport=975%2C279%2C0.08t=XMvLcN787B7ArRNo-1&scaling=scale-down-widthcontent-scaling=fixed&starting-point-node-id=54%3A5">Wireframe</a>
+                            <a href="https://yengni.github.io/granhand/">Prototype</a>
+                        </div>
+                        <div><img src="img/granhand.png" alt="그랑핸드"></div>
                     </div>
-                    <img src="img/granhand.png" alt="그랑핸드">
                     <div class="w_txt">
-                        <p><span>제작기간</span> : 40시간 / 1주일 소요</p>
-                        <p><span>제작페이지</span> :  Index, Product, (Product_Details)</span></p>
+                        <p><span>제작기간</span> : 2024. 09. 13 ~ 2024. 09. 24</p>
+                        <p><span>제작페이지</span> :  Index, Product, (Product_Details)<span></p>
                         <p><span>사용 프로그램</span></p>
                         <div class="icon">
-                            <img src="img/icon_black (1).png" alt="ps">
-                            <img src="img/icon_black (2).png" alt="html">
-                            <img src="img/icon_black (3).png" alt="css">
-                            <img src="img/icon_black (4).png" alt="fig">
-                            <img src="img/icon_black (5).png" alt="js">
-                            <img src="img/icon_black (6).png" alt="git">
+                            <img src="img/icon_black_html.png" alt="html">
+                            <img src="img/icon_black_css.png" alt="css">
+                            <img src="img/icon_black_fig.png" alt="fig">
+                            <img src="img/icon_black_js.png" alt="js">
+                            <img src="img/icon_black_git.png" alt="git">
                         </div>
                     </div>
                 </li>
@@ -123,23 +134,25 @@
                         <h4>청송뜨개실</h4>
                         <p>#명절할인마다  #탕진하고있는  #오랜취미</p>
                     </div>
-                    <div class="btn">
-                        <a href="#">기획서</a>
-                        <a href="#">Wireframe</a>
-                        <a href="#">Prototype</a>
+                    <div class="thumnail">
+                        <div class="btn">
+                            <a href="#">기획서</a>
+                            <a href="#">Wireframe</a>
+                            <a href="#">Prototype</a>
+                        </div>
+                        <div><img src="img/knitting.png" alt="청송뜨개실"></div>
                     </div>
-                    <img src="img/knitting.png" alt="청송뜨개실">
                     <div class="w_txt">
                         <p><span>제작기간</span> : 40시간 / 1주일 소요</p>
-                        <p><span>제작페이지</span> :  Index, Product, (Product_Details)</span></p>
+                        <p><span>제작페이지</span> :  Index, Product, (Product_Details)<span></p>
                         <p><span>사용 프로그램</span></p>
                         <div class="icon">
-                            <img src="img/icon_black (1).png" alt="ps">
-                            <img src="img/icon_black (2).png" alt="html">
-                            <img src="img/icon_black (3).png" alt="css">
-                            <img src="img/icon_black (4).png" alt="fig">
-                            <img src="img/icon_black (5).png" alt="js">
-                            <img src="img/icon_black (6).png" alt="git">
+                            <img src="img/icon_black_ps.png" alt="ps">
+                            <img src="img/icon_black_html.png" alt="html">
+                            <img src="img/icon_black_css.png" alt="css">
+                            <img src="img/icon_black_fig.png" alt="fig">
+                            <img src="img/icon_black_js.png" alt="js">
+                            <img src="img/icon_black_git.png" alt="git">
                         </div>
                     </div>
                 </li>
@@ -148,79 +161,78 @@
                         <h4>Holika Holika</h4>
                         <p>#7년째쓰고있는  #애착선크림</p>
                     </div>
-                    <div class="btn">
-                        <a href="#">기획서</a>
-                        <a href="#">Wireframe</a>
-                        <a href="#">Prototype</a>
+                    <div class="thumnail">
+                        <div class="btn">
+                            <a href="#">기획서</a>
+                            <a href="https://www.figma.com/proto/likuQmqxzOoaIrquMNI8WR%ED%99%80%EB%A6%AC%EC%B9%B4%ED%99%80%EB%A6%AC%EC%B9%B4page-id=0%3A1&node-id=222-64&node-type=frameviewport=772%2C205%2C0.3&t=QS85znI3Ip8Iv31t-1&scaling=min-zoomcontent-scaling=fixed&starting-point-node-id=1%3A2">Wireframe</a>
+                            <a href="https://yengni.github.io/holikaholika/indexhtml">Prototype</a>
+                        </div>
+                        <div><img src="img/holika.png" alt="홀리카홀리카"></div>
                     </div>
-                    <img src="img/granhand.png" alt="그랑핸드">
                     <div class="w_txt">
-                        <p><span>제작기간</span> : 40시간 / 1주일 소요</p>
-                        <p><span>제작페이지</span> :  Index, Product, (Product_Details)</span></p>
+                        <p><span>제작기간</span> : 2024. 09. 06 ~ 2024. 09. 12</p>
+                        <p><span>제작페이지</span> :  Index, Product, (Product_Details)<span></p>
                         <p><span>사용 프로그램</span></p>
                         <div class="icon">
-                            <img src="img/icon_black (1).png" alt="ps">
-                            <img src="img/icon_black (2).png" alt="html">
-                            <img src="img/icon_black (3).png" alt="css">
-                            <img src="img/icon_black (4).png" alt="fig">
-                            <img src="img/icon_black (5).png" alt="js">
-                            <img src="img/icon_black (6).png" alt="git">
+                            <img src="img/icon_black_ps.png" alt="ps">
+                            <img src="img/icon_black_html.png" alt="html">
+                            <img src="img/icon_black_css.png" alt="css">
+                            <img src="img/icon_black_fig.png" alt="fig">
+                            <img src="img/icon_black_js.png" alt="js">
+                            <img src="img/icon_black_git.png" alt="git">
                         </div>
                     </div>
                 </li>
             </ul>
-        </section><!-- cont2 끝 -->
-        <section class="cont3">
-            <h3><span>02</span> SNS Design</h3>
+        </div>
+    </section><!-- cont2 끝 -->
+    <section class="container cont3" id="SNS Design">
+        <div class="sub_title"><h3><span>02</span> SNS Design</h3></div>
+        <div class="contin">
             <ul class="sns_list">
                 <li>
-                    <img src="#" alt="sns디자인">
+                    <img src="img/sns1.jpg" alt="가을맞이 풀리오 특별 세일">
                 </li>
                 <li>
-                    <img src="#" alt="sns디자인">
+                    <img src="img/sns2.png" alt="the 15th ink incheon kpop concert">
                 </li>
                 <li>
-                    <img src="#" alt="sns디자인">
+                    <img src="img/sns1.jpg" alt="가을맞이 풀리오 특별 세일">
                 </li>
                 <li>
-                    <img src="#" alt="sns디자인">
+                    <img src="img/sns1.jpg" alt="가을맞이 풀리오 특별 세일">
                 </li>
                 <li>
-                    <img src="#" alt="sns디자인">
+                    <img src="img/sns1.jpg" alt="가을맞이 풀리오 특별 세일">
                 </li>
                 <li>
-                    <img src="#" alt="sns디자인">
-                </li>
-                <li>
-                    <img src="#" alt="sns디자인">
-                </li>
-                <li>
-                    <img src="#" alt="sns디자인">
+                    <img src="img/sns1.jpg" alt="가을맞이 풀리오 특별 세일">
                 </li>
             </ul>
-        </section><!-- cont3 끝 -->
-        <section class="cont4">
-            <h3><span>03</span> Banner Design</h3>
+        </div>
+    </section><!-- cont3 끝 -->
+    <section class="container cont4" id="Banner Design">
+        <div class="sub_title"><h3><span>03</span> Banner Design</h3></div>
+        <div class="contin">
             <ul class="bn_list">
-                <li class="long">
-                    <img src="#" alt="배너 디자인">
+                <li>
+                    <img src="img/bn1.png" alt="누적판매 350만개 국민 트러블 앰플 레티놀 시카 앰플">
                 </li>
-                <li class="shot">
-                    <img src="#" alt="배너 디자인">
+                <li>
+                    <img src="img/bn1.png" alt="누적판매 350만개 국민 트러블 앰플 레티놀 시카 앰플">
                 </li>
-                <li class="shot">
-                    <img src="#" alt="배너 디자인">
+                <li>
+                    <img src="img/bn1.png" alt="누적판매 350만개 국민 트러블 앰플 레티놀 시카 앰플">
                 </li>
-                <li class="shot">
-                    <img src="#" alt="배너 디자인">
-                </li>
-                <li class="shot">
-                    <img src="#" alt="배너 디자인">
+                <li>
+                    <img src="img/bn1.png" alt="누적판매 350만개 국민 트러블 앰플 레티놀 시카 앰플">
                 </li>
             </ul>
-        </section><!-- cont4 끝 -->
-        <section class="cont5">
-            <h3><span>04</span> Detail Design</h3>
+        </div>
+    </section><!-- cont4 끝 -->
+    <section class="container cont5" id="Detail Design">
+        <div class="sub_title"><h3><span>04</span> Detail Design</h3></div>
+        <div class="contin">
             <ul class="detail_list">
                 <li>
                     <img src="#" alt="상세페이지 디자인">
@@ -228,8 +240,7 @@
                 <li>
                     <img src="#" alt="상세페이지 디자인">
             </ul>
-        </section><!-- cont5 끝 -->
-    </section>
-    
+        </div>
+    </section><!-- cont5 끝 -->
 </body>
 </html>

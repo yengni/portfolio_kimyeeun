@@ -1,188 +1,259 @@
 body {background-color: #FFFEFA;}
 header {
-    background: url(../img/mainvisual2.png) no-repeat; 
-    height: 1080px;
+    background: url(../img/mainvisual2.png) no-repeat;
+    background-size: 100%;
+    height: 100vh;
     position: relative;
 }
 header .title {
-    background: url(../img/paint.png) no-repeat center center;
-    width: 100%; height: 100%;
+    position: relative;
+    padding: 100px 0;
+}
+header .title .bg {
+    width: 75%;
+    margin: 0 auto;
+}
+header .title .bg img {
+    width: 100%;
+}
+header .title .title_cont {
     position: absolute;
     top: 50%; left: 50%; transform: translate(-50%, -50%);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
-header .title h2 {
+header .title .title_cont span {
+    display: flex;
+    align-items: end;
+    margin-top: -50px;
+}
+header .title .title_cont span img {
+    animation-name: pofile_img;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+    z-index: -1;
+}
+@keyframes pofile_img {
+    0% {transform: rotate(-15deg);}
+    100% {transform: rotate(15deg);}
+}
+header .title .title_cont span p {
+    font-size: 2.22rem;
+    font-family: "YESMyoungjo-Regular";
+    margin-bottom: 15px; margin-left: -30px;
+}
+header .title .title_cont h2 {
     font-size: 2.778rem;
-    color: #004E11;
-    text-align: center;
-    margin-top: 376px;
+    margin: 30px 0 50px;
 }
-header .title h1 {
+header .title .title_cont h1 {
     font-size: 7.222rem;
-    color: #004E11;
-    text-align: center;
-    margin-top: 78px; margin-bottom: 106px;
-    font-weight: bold;
+    font-weight: 800;
+    background: linear-gradient(#004E11, #28ad45);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    padding-top: 5px;
 }
-header .title ul {
+header .title .title_cont ul {
     display: flex;
     justify-content: center;
+    width: 620px;
+    margin-top: 50px;
+    flex-flow: row wrap;
 }
-header .title ul li {
-    margin-right: 40px;
+header .title .title_cont .pf_list li {
+    margin-right: 30px;
 }
-header .title ul li a {
+header .title .title_cont .pf_list li:nth-child(3), header .title .title_cont .pf_list li:nth-child(5) {
+    margin-right: 0px;
+}
+header .title .title_cont .pf_list li:nth-child(4), header .title .title_cont .pf_list li:nth-child(5) {
+    margin-top: 15px;
+}
+header .title .title_cont .pf_list li a {
     font-size: 1.222rem;
 }
-header .title ul li:last-child {
-    margin-right: 0;
-}
-header .title ul li a:hover {
+header .title .title_cont .pf_list li a:hover {
     color: #12992f;
 }
-/* header 끝 */
-.container {width: 1920px;}
-.container .cont1 {
-    padding: 128px 120px 0;
-    margin: auto 0;
-    height: 1080px;
+/* ==================== cont 공통 ================== */
+.container {
+    height: 100vh;
     border-bottom: 2px solid #004E11;
-} 
-.container .cont1 h3 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.container .sub_title h3 {
     font-family: "YESMyoungjo-Regular";
     font-size: 2.22rem;
+    margin: 0 0 30px 120px;
 } 
-.container .cont1 h3 span {
+.container .sub_title h3 span {
     font-size: 2.77rem;
     font-family: "YESMyoungjo-Regular";
 }
-.container .cont1 .cont1in {
-    margin-top: 50px;
+.container .contin {
+    width: calc(100% - 240px);
+    margin: 0 auto;
+}
+/* ========================= about me ======================= */
+.cont1 {
+    background: url(../img/mainbg.png) no-repeat center center / 80%;
+}
+.cont1 .sub_title h3 {
+    font-family: "YESMyoungjo-Regular";
+    font-size: 2.22rem;
+    margin-left: 120px;
+    margin-top: -5%;
+} 
+.cont1 .contin {
     display: flex;
 }
-.container .cont1 .profile>img {
-    margin-bottom: 52px;
+.cont1 .contin .about_cont {
+    width: calc(100% / 3);
+    display: flex;
+    flex-flow: column;
 }
-.container .cont1 .profile .p_txt {
+.cont1 .contin .profile {
+    justify-content: center;
+}
+.cont1 .contin .profile>img {
+    width: 80%;
+    margin-left: 10%;
+}
+.cont1 .contin .profile .p_txt {
     text-align: center;
+    display: flex;
+    flex-flow: column;
+    margin-top: 20px;
 }
-.container .cont1 .profile .p_txt .p_name {
+.cont1 .contin .profile .p_txt .p_name {
     display: flex;
     justify-content: center;
+    align-items: end;
 }
-.container .cont1 .profile .p_txt .p_name .name {
+.cont1 .contin .profile .p_txt .p_name .name {
     font-size: 1.667rem;
     color: #000;
-    margin-right: 28px;
+    margin-right: 10px;
 }
-.container .cont1 .profile .p_txt .p_name .e_name {
+.cont1 .contin .profile .p_txt .p_name .e_name {
     font-weight: 300;
     font-family: "Gothic A1", sans-serif;
     letter-spacing: 0.05rem;
-    padding-top: 5px;
 }
-.container .cont1 .profile .p_txt p {
-    margin-bottom: 20px;
+.cont1 .contin .profile .p_txt p {
+    margin-top: 15px;
 }
-/* .container .cont1 .profile . {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-.container .cont1 .profile .about .p_name .name {
-    font-size: 1.667rem;
-    color: #000;
-    margin-right: 28px;
-}
-.container .cont1 .profile .p_name .e_name {
-    font-weight: 300;
-    font-family: "Gothic A1", sans-serif;
-    letter-spacing: 0.05rem;
-    padding-top: 5px;
-}
-.container .cont1 .profile .p_txt>p {
-    margin-bottom: 20px;
-} */
-.container .cont1 .cont1in .about_list {margin-left: 130px;}
-.container .cont1 .cont1in .about_list h4 {
+/* =====about1,2 공통===== */
+.cont1 .contin .about_cont .about_list h4 {
     font-size: 1.222rem;
     color: #000;
     border-bottom: 3px solid #004E11;
     display: inline-block;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
+    letter-spacing: -0.05rem;
 }
-.container .cont1 .cont1in .about_list .Keyword p {
+.cont1 .contin .about_cont .about_list p {
+    margin-bottom: 20px;
+}
+.cont1 .contin .about_cont .about_list p:last-child {
+    margin-bottom: 0px;
+}
+.cont1 .contin .about_cont .about_list p span {
+    color: #555; margin-left: 15px;
+}
+/* ====about 1==== */
+.cont1 .contin .about1 {
+    justify-content: space-around;
+    margin-left: 50px;
+}
+.cont1 .contin .about1 .about_list {
+}
+.cont1 .contin .about1 .Keyword {}
+.cont1 .contin .about1 .Keyword p {
     font-size: 1.222rem;
-    line-height: 40px;
-    margin-bottom: 90px;
+    line-height: 2.2;
+    animation-name: keyword;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    letter-spacing: -0.06rem;
 }
-.container .cont1 .cont1in .about_list .Interest p {
-    margin-bottom: 25px;
+@keyframes keyword {
+    0% {color: #279b0a;}
+    100% {color: #e0f144;}
 }
-.container .cont1 .cont1in .about_list .Certificate p {margin-bottom: 15px;}
-.container .cont1 .cont1in .about_list .Certificate p:last-child {margin-bottom: 90px;}
-.container .cont1 .cont1in .about_list .Certificate span {
-    color: #555; margin-left: 15px;
+/* ===about2=== */
+.cont1 .contin .about2 {
+    justify-content: space-between;
+    width: 40%;
 }
-.container .cont1 .cont1in .about_list .Experience p {margin-bottom: 15px;}
-.container .cont1 .cont1in .about_list .Experience p:last-child {margin-bottom: 90px;}
-.container .cont1 .cont1in .about_list .Experience span {
-    color: #555; margin-left: 15px;
-}
-.container .cont1 .cont1in .about_list .Skills ul {display: flex;}
-.container .cont1 .cont1in .about_list .Skills ul li {margin-right: 15px;}
-.container .cont1 .cont1in .about_list .Skills ul li:last-child {margin-right: 0px;}
-/* cont1 끝 */
-.container .cont2 {
-    padding: 134px 120px 0;
-    margin: auto 0;
-    height: 1080px;
-    border-bottom: 2px solid #004E11;
-}
-.container .cont2 h3 {
-    font-family: "YESMyoungjo-Regular";
-    font-size: 2.22rem;
-}
-.container .cont2 h3 span {
-    font-size: 2.77rem;
-    font-family: "YESMyoungjo-Regular";
-}
-.container .cont2 .web_list {
+.cont1 .contin .about2 .about_list {}
+.cont1 .contin .about2 .Skills {}
+.cont1 .contin .about2 .Skills .skills_list {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    width: 80%;
+    flex-flow: row wrap;
 }
-.container .cont2 .web_list li {margin-right: 90px;}
-.container .cont2 .web_list li:last-child {margin-right: 0px;}
-.container .cont2 .web_list li .title {
-    margin: 88px 0 32px 4px;
+.cont1 .contin .about2 .Skills .skills_list li {}
+/* ============================cont2============================== */
+.cont2 {
+    background: url(../img/mainbg.png) no-repeat center center / 80%;
+}
+.cont2 .web_list {
     display: flex;
+    justify-content: space-between;
 }
-.container .cont2 .web_list li .title h4 {
+.cont2 .web_list li {}
+.cont2 .web_list li:last-child {}
+.cont2 .web_list li .title {
+    display: flex;
+    align-items: end;
+    margin-bottom: 30px;
+}
+.cont2 .web_list li .title h4 {
     font-size: 1.222rem;
     color: #000;
     border-bottom: 3px solid #004E11;
+    display: inline-block;
 }
-.container .cont2 .web_list li .title>p {
-    margin-top: 5px; margin-left: 10px;
+.cont2 .web_list li .title>p {
     font-size: 0.778rem;
     color: #555;
     letter-spacing: -0.01rem;
+    margin-left: 10px;
 }
-.container .cont2 .web_list li .btn a {
+.cont2 .web_list li .thumnail .btn {
+    display: flex;
+    gap: 10px;
+}
+.cont2 .web_list li .thumnail .btn a {
     font-size: 0.889rem;
     background: #9BC2D8;
-    width: 110px; height: 28px;
+    width: 100px; height: 28px;
     display: inline-block;
     text-align: center;
-    line-height: 28px;
-    margin-left: 8px; padding-top: 3px;
+    line-height: 28px; 
+    padding-top: 3px;
 }
-.container .cont2 .web_list li .btn a:first-child {
+.cont2 .web_list li .thumnail .btn a:first-child {
     margin-left: 27px;
 }
-.container .cont2 .web_list li .btn a:hover {
+.cont2 .web_list li .thumnail .btn a:hover {
     color: #fff;
+    background-color: #4a91d4;
 }
-.container .cont2 .web_list li .w_txt {
+.cont2 .web_list li .w_txt {
     width: 450px; height: 148px;
     background: linear-gradient(to left, #EBEBEF 0%, #F9F9F9 50%, #EBEBEF 100%);
     border-radius: 20px;
@@ -190,165 +261,60 @@ header .title ul li a:hover {
     padding-top: 26px;
     margin: 25px auto 0;
 }
-.container .cont2 .web_list li .w_txt>p {
+.cont2 .web_list li .w_txt>p {
     margin-bottom: 20px;
     margin-left: 25px;
 }
-.container .cont2 .web_list li .w_txt>p span {
+.cont2 .web_list li .w_txt>p span {
     font-weight: bold;
 }
-.container .cont2 .web_list li .w_txt .icon {
+.cont2 .web_list li .w_txt .icon {
     margin-right: 10px;
     position: absolute;
-    right: 25px; bottom: 10px;
+    right: 25px; bottom: 14px;
 }
-/* cont2 끝 */
-.container .cont3 {
-    padding: 80px 120px 0;
-    margin: auto 0;
-    height: 1080px;
-    border-bottom: 2px solid #004E11;
-}
-.container .cont3 h3 {
+/*================= cont3 =================*/
+.cont3 {}
+.cont3 .sub_title h3 {
     font-family: "YESMyoungjo-Regular";
     font-size: 2.22rem;
+    margin-left: 120px;
+    margin-top: 0%;
+} 
+.cont3 .contin {
+    width: 70%;
 }
-.container .cont3 h3 span {
-    font-size: 2.77rem;
-    font-family: "YESMyoungjo-Regular";
-}
-.container .cont3 .sns_list {
-    margin-top: 56px;
+.cont3 .contin .sns_list {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-between
 }
-.container .cont3 .sns_list li {
-    margin-bottom: 35px;
-    margin-right: 35px;
-    width: 390px; height: 390px;
-}
-.container .cont3 .sns_list li:nth-child(4n) {
-    margin-right: 0px;
-}
-.container .cont3 .sns_list li img {
-    background-color: lightblue;
-    display: block;
-    width: 100%; height: 100%;
-}
-
+.cont3 .contin .sns_list li {}
+.cont3 .contin .sns_list li img {width: 400px;}
 /* cont3 끝 */
-.container .cont4 {
-    padding: 90px 120px 0;
-    margin: auto 0;
-    height: 1080px;
-    border-bottom: 2px solid #004E11;
-}
-.container .cont4 h3 {
-    font-family: "YESMyoungjo-Regular";
-    font-size: 2.22rem;
-}
-.container .cont4 h3 span {
-    font-size: 2.77rem;
-    font-family: "YESMyoungjo-Regular";
-}
-.container .cont4 .bn_list {
-    margin-top: 56px;
+.cont4 {}
+.cont4 .contin {}
+.cont4 .contin .bn_list {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
-.container .cont4 .bn_list li {
-    background-color: lightblue;
-    margin-bottom: 35px;
-}
-.container .cont4 .bn_list .long {
-    width: 1600px; height: 250px;
-    margin-left: 18px;
-}
-.container .cont4 .bn_list .shot {
-    margin-right: 35px;
-    width: 800px; height: 250px;
+.cont4 .contin .bn_list li {}
+.cont4 .contin .bn_list li img {width: 100%;}
 
-}
-.container .cont4 .bn_list .shot:nth-child(2n+1) {
-    margin-right: 0px;
-}
-.container .cont4 .bn_list li img {
-    display: block;
-    width: 100%; height: 100%;
-}
 /* cont4 끝 */
-.container .cont5 {
-    padding: 90px 120px 0;
-    margin: auto 0;
-    height: 1080px;
-    border-bottom: 2px solid #004E11;
-}
-.container .cont5 h3 {
-    font-family: "YESMyoungjo-Regular";
-    font-size: 2.22rem;
-}
-.container .cont5 h3 span {
-    font-size: 2.77rem;
-    font-family: "YESMyoungjo-Regular";
-}
-.container .cont5 .detail_list {
-    margin-top: 70px;
+.cont5 {}
+.cont5 .detail_list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
-.container .cont5 .detail_list li {
+.cont5 .detail_list li {
     background-color: lightblue;
-    margin-right: 35px;
     width: 800px; height: 800px;
 }
-.container .cont5 .detail_list li:last-child {
-    margin-right: 0px;
-}
-.container .cont5 .detail_list li img {
+.cont5 .detail_list li img {
     display: block;
     width: 100%; height: 100%;
 }
 /* cont5 끝 */
 /* 1920px 끝 */
-/* 1024px 시작 */
-@media screen and (max-width:1024px){
-    header {
-        height: 577px;
-        background-size: 1024px auto;
-    }
-    header .title {
-        background-size: 882px auto;
-    }
-    header .title h2 {
-        font-size: 2.22rem;
-        margin-top: 162px;
-    }
-    header .title h1 {
-        font-size: 6.11rem;
-        margin-top: 58px; margin-bottom: 50px;
-    }
-    .container {width: 100%;}
-    .container .cont1 {
-        padding: 90px 0;
-    }
-    .container .h3 {
-        font-size: 2.22rem;
-    }
-    .container .cont1 h3 span {
-        font-size: 2.778rem;
-    }
-    .container .cont1 .cont1in {
-        margin-top: 50px;
-        display: block;
-    }
-    .container .cont1 .profile>img {
-        margin-left: 62px;
-    }
-    .container .cont1 .profile .p_name {
-    }
-    .container .cont1 .profile .p_txt>p {
-        text-align: none;
-        margin-bottom: 20px;
-    }
-}
