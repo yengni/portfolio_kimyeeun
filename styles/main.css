@@ -214,7 +214,13 @@ header .title .title_cont .pf_list li a:hover {
     display: flex;
     justify-content: space-between;
 }
-.cont2 .web_list li {}
+.cont2 .web_list li {
+    opacity: 100%;
+    transition: all 0.3s;
+}
+.cont2 .web_list li:hover {
+    opacity: 80%;
+}
 .cont2 .web_list li:last-child {}
 .cont2 .web_list li .title {
     display: flex;
