@@ -74,7 +74,7 @@ header .title .title_cont .pf_list li:nth-child(3), header .title .title_cont .p
     margin-right: 0px;
 }
 header .title .title_cont .pf_list li:nth-child(4), header .title .title_cont .pf_list li:nth-child(5) {
-    margin-top: 15px;
+    margin-top: 30px;
 }
 header .title .title_cont .pf_list li a {
     font-size: 1.222rem;
@@ -107,14 +107,9 @@ header .title .title_cont .pf_list li a:hover {
 .cont1 {
     background: url(../img/mainbg.png) no-repeat center center / 80%;
 }
-.cont1 .sub_title h3 {
-    font-family: "YESMyoungjo-Regular";
-    font-size: 2.22rem;
-    margin-left: 120px;
-    margin-top: -5%;
-} 
 .cont1 .contin {
     display: flex;
+    height: 70%;
 }
 .cont1 .contin .about_cont {
     width: calc(100% / 3);
@@ -175,9 +170,6 @@ header .title .title_cont .pf_list li a:hover {
     justify-content: space-around;
     margin-left: 50px;
 }
-.cont1 .contin .about1 .about_list {
-}
-.cont1 .contin .about1 .Keyword {}
 .cont1 .contin .about1 .Keyword p {
     font-size: 1.222rem;
     line-height: 2.2;
@@ -189,16 +181,14 @@ header .title .title_cont .pf_list li a:hover {
     letter-spacing: -0.06rem;
 }
 @keyframes keyword {
-    0% {color: #279b0a;}
-    100% {color: #e0f144;}
+    0% {color: #1e7508;}
+    100% {color: #cadb31;}
 }
 /* ===about2=== */
 .cont1 .contin .about2 {
     justify-content: space-between;
     width: 40%;
 }
-.cont1 .contin .about2 .about_list {}
-.cont1 .contin .about2 .Skills {}
 .cont1 .contin .about2 .Skills .skills_list {
     display: flex;
     justify-content: space-between;
@@ -221,7 +211,6 @@ header .title .title_cont .pf_list li a:hover {
 .cont2 .web_list li:hover {
     opacity: 80%;
 }
-.cont2 .web_list li:last-child {}
 .cont2 .web_list li .title {
     display: flex;
     align-items: end;
@@ -280,7 +269,6 @@ header .title .title_cont .pf_list li a:hover {
     right: 25px; bottom: 14px;
 }
 /*================= cont3 =================*/
-.cont3 {}
 .cont3 .sub_title h3 {
     font-family: "YESMyoungjo-Regular";
     font-size: 2.22rem;
@@ -295,21 +283,16 @@ header .title .title_cont .pf_list li a:hover {
     flex-flow: row wrap;
     justify-content: space-between
 }
-.cont3 .contin .sns_list li {}
 .cont3 .contin .sns_list li img {width: 400px;}
-/* cont3 끝 */
-.cont4 {}
-.cont4 .contin {}
+/* ===============cont4===============*/
 .cont4 .contin .bn_list {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
-.cont4 .contin .bn_list li {}
 .cont4 .contin .bn_list li img {width: 100%;}
 
-/* cont4 끝 */
-.cont5 {}
+/* ================cont5=============== */
 .cont5 .detail_list {
     display: flex;
     justify-content: space-between;
