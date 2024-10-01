@@ -1,4 +1,9 @@
-body {background-color: #FFFEFA;}
+body {
+    background-color: #FFFEFA;
+}
+body > *{
+    min-width: 1680px;
+}
 header {
     background: url(../img/mainvisual2.png) no-repeat;
     background-size: 100%;
@@ -177,7 +182,7 @@ header .title .title_cont .pf_list li a:hover {
 /* ===about2=== */
 .cont1 .contin .about2 {
     justify-content: space-between;
-    width: 40%;
+    /* width: 40%; */
 }
 .cont1 .contin .about2 .Skills .skills_list {
     display: flex;
@@ -185,75 +190,81 @@ header .title .title_cont .pf_list li a:hover {
     width: 80%;
     flex-flow: row wrap;
 }
-.cont1 .contin .about2 .Skills .skills_list li {}
 /* ============================cont2============================== */
 .cont2 {
     background: url(../img/mainbg.png) no-repeat center center / 80%;
+    flex-flow: column;
+    justify-content: center;
 }
 .cont2 .web_list {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
-.cont2 .web_list li {
-    opacity: 100%;
-    transition: all 0.3s;
+.cont2 .web_list .title {
+    width: 400px;
 }
-.cont2 .web_list li:hover {
-    opacity: 80%;
-}
-.cont2 .web_list li .title {
-    display: flex;
-    align-items: end;
-    margin-bottom: 30px;
-}
-.cont2 .web_list li .title h4 {
-    font-size: 1.222rem;
+.cont2 .web_list .title h4 {
+    font-size: 2.222rem;
     color: #000;
     border-bottom: 3px solid #004E11;
     display: inline-block;
 }
-.cont2 .web_list li .title>p {
-    font-size: 0.778rem;
+.cont2 .web_list .title .hash {
+    font-size: 1.11rem;
     color: #555;
     letter-spacing: -0.01rem;
-    margin-left: 10px;
+    margin: 15px 0 15px;
 }
-.cont2 .web_list li .thumnail .btn {
+.cont2 .web_list .title .info {
+    font-size: 1.389rem;
+    margin-top: 30px;
+}
+.cont2 .web_list .web_list_cont .thumnail {
     display: flex;
-    gap: 10px;
 }
-.cont2 .web_list li .thumnail .btn a {
-    font-size: 0.889rem;
+.cont2 .web_list .web_list_cont .thumnail .btn {
+    display: flex;
+    gap: 25px;
+    flex-flow: column;
+    margin-top: 40px;
+}
+.cont2 .web_list .web_list_cont .thumnail .btn a {
     background: #9BC2D8;
-    width: 100px; height: 28px;
+    width: 140px; height: 35px;
     display: inline-block;
     text-align: center;
-    line-height: 28px; 
+    line-height: 35px; 
     padding-top: 3px;
 }
-.cont2 .web_list li .thumnail .btn a:first-child {
-    margin-left: 27px;
+.cont2 .web_list .web_list_cont .thumnail .btn a:last-child {
+    font-size: 0.778rem;
 }
-.cont2 .web_list li .thumnail .btn a:hover {
+.cont2 .web_list .web_list_cont .thumnail .btn a:hover {
     color: #fff;
     background-color: #4a91d4;
 }
-.cont2 .web_list li .w_txt {
-    width: 450px; height: 148px;
+.cont2 .web_list .web_list_cont .thumnail .desktop {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 20px;
+}
+.cont2 .web_list .web_list_cont .thumnail .desktop .w_txt {
+    width: 575px; height: 180px;
     background: linear-gradient(to left, #EBEBEF 0%, #F9F9F9 50%, #EBEBEF 100%);
     border-radius: 20px;
     position: relative;
     padding-top: 26px;
-    margin: 25px auto 0;
 }
-.cont2 .web_list li .w_txt>p {
+.cont2 .web_list .web_list_cont .thumnail .desktop .w_txt > p {
     margin-bottom: 20px;
     margin-left: 25px;
 }
-.cont2 .web_list li .w_txt>p span {
+.cont2 .web_list .web_list_cont .thumnail .desktop .w_txt > p span {
     font-weight: bold;
 }
-.cont2 .web_list li .w_txt .icon {
+.cont2 .web_list .web_list_cont .thumnail .desktop .w_txt .icon {
     margin-right: 10px;
     position: absolute;
     right: 25px; bottom: 14px;
@@ -271,7 +282,7 @@ header .title .title_cont .pf_list li a:hover {
 .cont3 .contin .sns_list {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between
+    justify-content: space-between;
 }
 .cont3 .contin .sns_list li img {width: 400px;}
 /* ===============cont4===============*/
@@ -283,7 +294,7 @@ header .title .title_cont .pf_list li a:hover {
 .cont4 .contin .bn_list li img {width: 800px;}
 
 /* ================cont5=============== */
-.cont5 .detail_list {
+/* .cont5 .detail_list {
     display: flex;
     justify-content: space-between;
 }
@@ -294,6 +305,6 @@ header .title .title_cont .pf_list li a:hover {
 .cont5 .detail_list li img {
     display: block;
     width: 100%; height: 100%;
-}
+} */
 /* cont5 끝 */
 /* 1920px 끝 */
