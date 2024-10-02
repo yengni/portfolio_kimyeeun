@@ -55,17 +55,17 @@ header .title .title_cont h1 {
 header .title .title_cont ul {
     display: flex;
     justify-content: center;
-    width: 620px;
+    width: 550px;
     margin-top: 50px;
     flex-flow: row wrap;
 }
 header .title .title_cont .pf_list li {
     margin-right: 30px;
 }
-header .title .title_cont .pf_list li:nth-child(3), header .title .title_cont .pf_list li:nth-child(5) {
+header .title .title_cont .pf_list li:nth-child(2), header .title .title_cont .pf_list li:nth-child(5) {
     margin-right: 0px;
 }
-header .title .title_cont .pf_list li:nth-child(4), header .title .title_cont .pf_list li:nth-child(5) {
+header .title .title_cont .pf_list li:nth-child(3), header .title .title_cont .pf_list li:nth-child(4), header .title .title_cont .pf_list li:nth-child(5) {
     margin-top: 30px;
 }
 header .title .title_cont .pf_list li a {
@@ -276,20 +276,23 @@ header .title .title_cont .pf_list li a:hover {
     margin-left: 120px;
     margin-top: 0%;
 } 
-.cont3 .contin {
-    width: 70%;
-}
 .cont3 .contin .sns_list {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+}
+.cont3 .contin .sns_list li {
+    width: calc((80% - 60px) / 3);
+    margin: 0 auto;
 }
 .cont3 .contin .sns_list li img {width: 400px;}
 /* ===============cont4===============*/
 .cont4 .contin .bn_list {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+}
+.cont4 .contin .bn_list li {
+    width: calc((100% - 60px) /2);
+    margin: 0 auto;
 }
 .cont4 .contin .bn_list li img {width: 800px;}
 
