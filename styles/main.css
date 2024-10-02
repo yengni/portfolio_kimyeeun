@@ -4,15 +4,23 @@ body {
 body > *{
     min-width: 1680px;
 }
-header {
+/* header {
     background: url(../img/mainvisual2.png) no-repeat;
     background-size: 100%;
     height: 100vh;
     position: relative;
+} */
+header {
+    background-color: #004E11;
+    height: 100vh;
+    padding-top: 20px;
 }
 header .title {
     position: relative;
-    padding: 100px 0;
+    background-color: #fff;
+    width: calc(100% - 40px);
+    height: calc(100% - 20px);
+    margin: 0px auto;
 }
 header .title .bg {
     width: 75%;
@@ -28,7 +36,9 @@ header .title .title_cont {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    border-radius: 100%;
+    border: 3px solid #004E11;
+    padding: 50px;
 }
 header .title .title_cont span {
     display: flex;
@@ -43,7 +53,7 @@ header .title .title_cont h2 {
     margin: 30px 0 50px;
 }
 header .title .title_cont h1 {
-    font-size: 7.222rem;
+    font-size: 6.111rem;
     font-weight: 800;
     background: linear-gradient(hwb(83 3% 81%), #44991c);
     background-clip: text;
@@ -267,7 +277,7 @@ header .title .title_cont .pf_list li a:hover {
 .cont2 .web_list .web_list_cont .thumnail .desktop .w_txt .icon {
     margin-right: 10px;
     position: absolute;
-    right: 25px; bottom: 14px;
+    left: 160px; bottom: 35px;
 }
 /*================= cont3 =================*/
 .cont3 .sub_title h3 {
