@@ -4,12 +4,6 @@ body {
 body > *{
     min-width: 1680px;
 }
-/* header {
-    background: url(../img/mainvisual2.png) no-repeat;
-    background-size: 100%;
-    height: 100vh;
-    position: relative;
-} */
 header {
     background-color: #004E11;
     height: 100vh;
@@ -22,13 +16,6 @@ header .title {
     height: calc(100% - 20px);
     margin: 0px auto;
 }
-header .title .bg {
-    width: 75%;
-    margin: 0 auto;
-}
-header .title .bg img {
-    width: 100%;
-}
 header .title .title_cont {
     position: absolute;
     top: 50%; left: 50%; transform: translate(-50%, -50%);
@@ -38,6 +25,7 @@ header .title .title_cont {
     align-items: center;
     border-radius: 100%;
     border: 3px solid #004E11;
+    width: 900px; height: 700px;
     padding: 50px;
 }
 header .title .title_cont span {
