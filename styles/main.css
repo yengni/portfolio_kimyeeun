@@ -6,8 +6,8 @@ body > *{
 }
 header {
     background-color: #004E11;
-    height: 100vh;
     padding-top: 20px;
+    height: 100vh;
 }
 header .title {
     position: relative;
@@ -77,11 +77,11 @@ header .title .title_cont .pf_list li a:hover {
 }
 /* ==================== cont 공통 ================== */
 .container {
-    height: 100vh;
     border-bottom: 2px solid #004E11;
     display: flex;
     flex-flow: column;
     justify-content: center;
+    padding: 100px 0;
 }
 .container .sub_title h3 {
     font-family: "YESMyoungjo-Regular";
@@ -213,10 +213,14 @@ header .title .title_cont .pf_list li a:hover {
     color: #555;
     letter-spacing: -0.01rem;
     margin: 15px 0 15px;
+    margin-bottom: 20px;
 }
 .cont2 .web_list .title .info {
-    font-size: 1.389rem;
-    margin-top: 30px;
+    font-size: 1.11rem;
+    line-height: 2;
+}
+.cont2 .web_list .title .icon {
+    margin-left: 15px;
 }
 .cont2 .web_list .web_list_cont .thumnail {
     display: flex;
@@ -228,44 +232,22 @@ header .title .title_cont .pf_list li a:hover {
     margin-top: 40px;
 }
 .cont2 .web_list .web_list_cont .thumnail .btn a {
-    background: #9BC2D8;
-    width: 140px; height: 35px;
+    background: #ade0a0;
+    width: 130px; height: 40px;
     display: inline-block;
     text-align: center;
-    line-height: 35px; 
-    padding-top: 3px;
-}
-.cont2 .web_list .web_list_cont .thumnail .btn a:last-child {
-    font-size: 0.778rem;
+    line-height: 40px; 
+    padding-top: 2px;
 }
 .cont2 .web_list .web_list_cont .thumnail .btn a:hover {
     color: #fff;
-    background-color: #4a91d4;
+    background-color: #b5f09a;
 }
 .cont2 .web_list .web_list_cont .thumnail .desktop {
     display: flex;
     flex-flow: column;
     align-items: center;
     gap: 20px;
-}
-.cont2 .web_list .web_list_cont .thumnail .desktop .w_txt {
-    width: 575px; height: 180px;
-    background: linear-gradient(to left, #EBEBEF 0%, #F9F9F9 50%, #EBEBEF 100%);
-    border-radius: 20px;
-    position: relative;
-    padding-top: 26px;
-}
-.cont2 .web_list .web_list_cont .thumnail .desktop .w_txt > p {
-    margin-bottom: 20px;
-    margin-left: 25px;
-}
-.cont2 .web_list .web_list_cont .thumnail .desktop .w_txt > p span {
-    font-weight: bold;
-}
-.cont2 .web_list .web_list_cont .thumnail .desktop .w_txt .icon {
-    margin-right: 10px;
-    position: absolute;
-    left: 160px; bottom: 35px;
 }
 /*================= cont3 =================*/
 .cont3 .sub_title h3 {
@@ -282,30 +264,42 @@ header .title .title_cont .pf_list li a:hover {
     width: calc((80% - 60px) / 3);
     margin: 0 auto;
 }
-.cont3 .contin .sns_list li img {width: 400px;}
+.cont3 .contin .sns_list li img {width: 100%;}
 /* ===============cont4===============*/
 .cont4 .contin .bn_list {
     display: flex;
     flex-flow: row wrap;
+    margin: 0 auto;
 }
 .cont4 .contin .bn_list li {
     width: calc((100% - 60px) /2);
-    margin: 0 auto;
 }
-.cont4 .contin .bn_list li img {width: 800px;}
+.cont4 .contin .bn_list li:nth-child(1), .cont4 .contin .bn_list li:nth-child(3) {margin-right: 20px;}
+.cont4 .contin .bn_list li img {width: 100%;}
 
 /* ================cont5=============== */
-/* .cont5 .detail_list {
+#detailDesign {}
+#detailDesign .sub_title {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
-.cont5 .detail_list li {
-    background-color: lightblue;
-    width: 800px; height: 800px;
+#detailDesign .sub_title p {
+    color: #555;
 }
-.cont5 .detail_list li img {
-    display: block;
-    width: 100%; height: 100%;
-} */
+/* thumnail modal */
+#detailDesign .thumnail {
+    display:flex; width:1200px; gap:10px;
+    height:700px; overflow:hidden;
+}
+#detailDesign .thumnail a {}
+#detailDesign .thumnail a img {width:100%;}
+#detailDesign .popup {
+    position:fixed; left:0; top:0; z-index:999; 
+    width:100%; height:100vh; overflow:auto;
+    background:rgba(0,0,0,0.8); padding:10px 0;
+    text-align:center;
+    display:none;
+}
+#detailDesign .popup img {width:800px;}
 /* cont5 끝 */
-/* 1920px 끝 */
