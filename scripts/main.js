@@ -24,4 +24,5 @@ for(i of thumnail_detail){
 
 popup_detail.addEventListener('click',()=>{
     popup_detail.style.display = 'none'
+    document.body.style.overflow = ''
 })
