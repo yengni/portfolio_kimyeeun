@@ -16,6 +16,7 @@ for(i of thumnail_detail){
         e.preventDefault();
         console.log(this.children[0].src)
         popup_detail.style.display = 'block'
+        popup_detail.scrollTo(0,0)
         popup_detail.children[0].src = this.children[0].src
         scrollbars = 1
         document.body.style.overflow = 'hidden'
