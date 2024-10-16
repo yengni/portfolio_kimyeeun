@@ -4,30 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js" defer></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css">
     <script src="scripts/main.js" defer></script>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
     <header>
         <div class="title">
             <div class="title_cont">
-                <span>
-                    <p>YE EUN's</p>
-                </span>
-                <h2>2024 Web Publisher</h2>
-                <h1>PORT-FOLIO</h1>
-                <ul class="pf_list">
-                    <li><a href="#aboutme">About ME</a></li>
-                    <li><a href="#webRedesignProject">Web Redesign Project</a></li>
-                    <li><a href="#snsDesign">SNS Design</a></li>
-                    <li><a href="#bannerDesign">Banner Design</a></li>
-                    <li><a href="#detailDesign">Detail Design</a></li>
-                </ul>
+                <h2>2024 Web design</h2>
+                <h1>PORTFOLIO</h1>
             </div>
+            <ul class="pf_list">
+                <li><a href="#aboutme">About ME</a></li>
+                <li><a href="#webRedesignProject">Web Redesign Project</a></li>
+                <li><a href="#snsDesign">SNS Design</a></li>
+                <li><a href="#bannerDesign">Banner Design</a></li>
+                <li><a href="#detailDesign">Detail Design</a></li>
+            </ul>
         </div>
     </header><!-- header 끝 -->
     <section class="container cont1" id="aboutme">
@@ -194,46 +194,50 @@
     </section><!-- cont2 끝 -->
     <section class="container cont3" id="snsDesign">
         <div class="sub_title"><h3><span>02</span> SNS Design</h3></div>
-        <div class="contin">
-            <ul class="sns_list">
-                <li>
+        <div class="swiper sns_list">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
                     <img src="img/sns1.jpg" alt="가을맞이 풀리오 특별 세일">
-                </li>
-                <li>
+                </div>
+                <div class="swiper-slide">
                     <img src="img/sns2.jpg" alt="귤 톡톡 릴렉싱 티플레저">
-                </li>
-                <li>
+                </div>
+                <div class="swiper-slide">
                     <img src="img/sns3.jpg" alt="라라스윗 시그니처 골드 케이크 라라스윗만의 노하우로 완성된 풍부하고 진한 달콤함"> 
-                </li>
-                <li>
+                </div>
+                <div class="swiper-slide">
                     <img src="img/sns4.png" alt="welcome 신규 회원가입 혜택 즉시 할인 쿠폰 3,000원">
-                </li>
-                <li>
+                </div>
+                <div class="swiper-slide">
                     <img src="img/sns5.jpg" alt="집 안에서 펼쳐지는 부담없는 상상력 ikea 영감을 주는 다양한 콘텐츠와 홈퍼니싱 아이디어를 살펴보고, 나에게 필요한 솔루션을 찾아보세요">
-                </li>
-                <li>
+                </div>
+                <div class="swiper-slide">
                     <img src="img/sns6.png" alt="the 15th ink incheon kpop concert">
-                </li>
-            </ul>
+                </div>
+            </div>
+            <div class="swiper-button-prev arrow"></div>
+            <div class="swiper-button-next arrow"></div>
         </div>
     </section><!-- cont3 끝 -->
     <section class="container cont4" id="bannerDesign">
         <div class="sub_title"><h3><span>03</span> Banner Design</h3></div>
-        <div class="contin">
-            <ul class="bn_list">
-                <li>
+        <div class="swiper bn_list">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
                     <img src="img/bn1.jpg" alt="누적판매 350만개 국민 트러블 앰플 레티놀 시카 앰플">
-                </li>
-                <li>
+                </div>
+                <div class="swiper-slide">
                     <img src="img/bn2.jpg" alt="최애캐릭터 잠옷을 찾는다면? pajama olymplad">
-                </li>
-                <li>
+                </div>
+                <div class="swiper-slide">
                     <img src="img/bn3.jpg" alt="아키클래식">
-                </li>
-                <li>
+                </div>
+                <div class="swiper-slide">
                     <img src="img/bn4.jpg" alt="네파 아웃도어 빅세일 24fw 다운재킷 20% + 추가 10% off">
-                </li>
-            </ul>
+                </div>
+            </div>
+            <div class="swiper-button-prev arrow"></div>
+            <div class="swiper-button-next arrow"></div>
         </div>
     </section><!-- cont4 끝 -->
     <section class="container cont5" id="detailDesign">

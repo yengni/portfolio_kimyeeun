@@ -6,7 +6,26 @@ $('.popup').on('click', function(e){
     e.preventDefault();
     $('.popup').hide();
 }); */
-
+const sns = new Swiper(".sns_list", {
+    slidesPerView: 3,
+    spaceBetween: 40,
+    autoplay : {delay:5000},
+    loop: true,
+    navigation:{
+        prevEl : '.sns_list .swiper-button-prev',
+        nextEl : '.sns_list .swiper-button-next',
+    },
+})
+const bn = new Swiper(".bn_list", {
+    slidesPerView: 2,
+    spaceBetween: 50,
+    autoplay : {delay:5000},
+    loop: true,
+    navigation:{
+        prevEl : '.bn_list .swiper-button-prev',
+        nextEl : '.bn_list .swiper-button-next',
+    },
+})
 const thumnail_detail = document.querySelectorAll('#detailDesign .thumnail a')
 const popup_detail = document.querySelector('#detailDesign .popup')
 console.log(popup_detail)
